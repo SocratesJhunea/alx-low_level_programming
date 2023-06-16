@@ -14,13 +14,11 @@ int main(void)
 	for (dig2 = dig1; dig2 < 10; dig2++)
 	{
 	putchar(dig1 + '0');
-
 	putchar(dig2 + '0');
 
 	if (dig1 != 9 || dig2 != 9)
 	{
 	putchar(',');
-
 	putchar(' ');
 	}
 	}
