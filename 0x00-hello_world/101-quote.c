@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Return: 1
+ * main - Entry point
+ * Return: Always 1 (failure)
  */
 int main(void)
 {
-	fprintf(stdout, "and that piece of art is useful" - Dora Korpar, 2015-10-19,\n");
-	return (1);
+	const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    fwrite(message, sizeof(char), sizeof(message) - 1, stderr);
+    return 1;
 }
