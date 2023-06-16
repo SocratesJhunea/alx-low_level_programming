@@ -8,11 +8,12 @@
 
 int main(void)
 {
-	int num;
+	int v;
 
-	for (num = 0; num < 10; num)
+	while (v < 10)
 	{
-	printf("%d ", num);
+	printf("%d ", v);
+	v += 1;
 	}
 	printf("\n");
 	return (0);
