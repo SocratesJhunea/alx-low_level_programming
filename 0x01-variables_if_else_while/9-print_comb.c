@@ -7,23 +7,18 @@
  */
 int main(void)
 {
-	int dig1, dig2;
+	int dig1 = '0';
 
-	for (dig1 = 0; dig1 < 10; dig1++)
+	while (dig1 <= '9')
 	{
-	for (dig2 = dig1; dig2 < 10; dig2++)
-	{
-	putchar(dig1 + '0');
-	putchar(dig2 + '0');
-
-	if (dig1 != 9 || dig2 != 9)
-	{
-	putchar(',');
-	putchar(' ');
-	}
-	}
+		putchar(dig1);
+		if (dig1 != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		++dig1;
 	}
 	putchar('\n');
-
 	return (0);
 }
