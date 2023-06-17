@@ -1,11 +1,14 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - Entry point
- * Return: Always 1 (error)
+ * main -  Prints exactly and that piece of art is 
+ * useful - Dora Korpar, 2015-10-19
+ *
+ * Return: Always 0  (success)
  */
 int main(void)
 {
-	fprintf(stdout, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+	sizeof("and that piece of art is useful\" - Dora Korpar, 2015-1--19"));
 	return (1);
 }
