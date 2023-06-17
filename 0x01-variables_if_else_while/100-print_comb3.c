@@ -11,7 +11,7 @@ int main(void)
 	int digA = '0';
 	int digB = '0';
 
-	while(digA <= '9')
+	while (digA <= '9')
 	{
 		while (digB <= '9')
 		{
