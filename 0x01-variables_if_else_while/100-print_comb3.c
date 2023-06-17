@@ -11,16 +11,16 @@ int main(void)
 
 	for (digA = 0; digA < 10; digA++)
 	{
-		for (digB = digA; digB < 10; digB++)
+		for (digB = digA + 1; digB < 10; digB++)
 		{
-		if (!(digA > digB) || digA == digB)
-			{
 			putchar(digA + '0');
 			putchar(digB + '0');
-			putchar(',');
-			putchar(' ');
 
-			break;
+			if (digA != 8 || digB != 9)
+			{
+				putchar(',');
+				putchar(' ');
+
 			}
 		}
 	}
