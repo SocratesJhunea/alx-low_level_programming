@@ -1,38 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - function to print combination of two numbers
+ * main - Prints all possible different combinations of two digits
  *
- * Return: 0 on success
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int digA = '0';
-	int digB = '0';
+	int digA, digB;
 
-	while (digA <= '9')
+	for (digA = 0; digA < 10; digA++)
 	{
-		while (digB <= '9')
+		for (digB = digA; digB < 10; digB++)
 		{
-			if (!(digA > digB) || digA == digB)
+		if (digA != digB)
 			{
-				putchar(digA);
-				putchar(digB);
-				if (digA == '8' && digB == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			putchar(digA + '0');
+			putchar(digB + '0');
+			putchar(',');
+			putchar(' ');
+
+			break;
 			}
-			digB++;
 		}
-		digB = '0';
-		digA++;
 	}
+	putchar('\n');
+
 return (0);
 }
