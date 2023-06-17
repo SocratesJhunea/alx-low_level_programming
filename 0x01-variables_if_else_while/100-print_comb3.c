@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (digB = digA; digB < 10; digB++)
 		{
-		if (digA != digB)
+		if (!(digA > digB) || digA == digB)
 			{
 			putchar(digA + '0');
 			putchar(digB + '0');
