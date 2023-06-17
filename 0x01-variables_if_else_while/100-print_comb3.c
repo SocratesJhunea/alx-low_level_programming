@@ -29,10 +29,10 @@ int main(void)
 					putchar(' ');
 				}
 			}
-digB++;
+			digB++;
 		}
+		digB = '0';
+		digA++;
 	}
-digB = '0';
-digA++;
 return (0);
 }
