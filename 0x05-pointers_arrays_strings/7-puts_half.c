@@ -5,28 +5,27 @@
  * puts_half - function that prints half of a string, followed by a new line
  * @str: character to be treated
  *
- * Return: always 0
+ * Return: 0 always
  */
-
 void puts_half(char *str)
 {
 	int length = strlen(str);
-	int half = length / 2;
+	int start_index;
 	int i;
 
-	if (length % 2 == 1)
+	if (length % 2 == 0)
 	{
-	for (i = half; i < length; i++)
-	{
-	putchar(str[i]);
-	}
+	start_index = length / 2;
 	}
 	else
 	{
-	for (i = half - 1; i < length; i++)
+	start_index = (length - 1) / 2;
+	}
+
+	for (i = start_index; i < length; i++)
 	{
 	putchar(str[i]);
 	}
-	}
+
 	putchar('\n');
 }
