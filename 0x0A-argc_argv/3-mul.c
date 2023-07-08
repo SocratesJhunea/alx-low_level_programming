@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 
-int i, d, n, len, f, digit;
+	int i, d, n, len, f, digit;
 
 
 	i = 0;
@@ -47,13 +47,14 @@ int i, d, n, len, f, digit;
 		break;
 	f = 0;
 	}
-		i++;
+	i++;
 	}
 	if (f == 0)
-		return (0);
-
+	return (0);
 	return (n);
 }
+
+
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
