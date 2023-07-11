@@ -13,39 +13,39 @@ char *str_concat(char *s1, char *s2)
 {
 	char *conct;
 
-	int i, ci;
+	int a, ba;
 
 	if (s1 == NULL)
-		s1 = "";
+	s1 = "";
 
 	if (s2 == NULL)
-		s2 = "";
-		i = ci = 0;
+	s2 = "";
+	a = ba = 0;
 
-	while (s1[i] != '\0')
-		i++;
+	while (s1[a] != '\0')
+	a++;
 
-	while (s2[ci] != '\0')
-		ci++;
+	while (s2[ba] != '\0')
+	ba++;
 
-	conct = malloc(sizeof(char) * (i + ci + 1));
+	conct = malloc(sizeof(char) * (a + ba + 1));
 
 	if (conct == NULL)
-		return (NULL);
+	return (NULL);
 
-	i = ci = 0;
+	a = ba = 0;
 
-	while (s1[i] != '\0')
+	while (s1[a] != '\0')
 	{
-		conct[i] = s1[i];
-		i++;
+	conct[a] = s1[a];
+	a++;
 	}
-	while (s2[ci] != '\0')
+	while (s2[ba] != '\0')
 	{
-		conct[i] = s2[ci];
-		i++, ci++;
+	conct[a] = s2[ba];
+	a++, ba++;
 	}
-	conct[i] = '\0';
+	conct[a] = '\0';
 
 	return (conct);
 }
